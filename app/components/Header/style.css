@@ -1,0 +1,151 @@
+/* components/Header/style.css */
+
+.ks-header {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  z-index: 50;
+  background-color: #ffffff;
+  box-shadow: 0 1px 10px rgba(15, 23, 42, 0.08);
+}
+
+.ks-header-inner {
+  max-width: 80rem; /* similar to max-w-7xl */
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ks-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ks-logo-icon {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #009b77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ks-logo-icon-svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: #ffffff;
+}
+
+.ks-logo-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #002b7f;
+}
+
+.ks-logo-subtitle {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.ks-nav-desktop {
+  display: none;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.ks-nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #475569;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.15rem;
+  transition: color 0.2s ease;
+}
+
+.ks-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #009b77;
+  transition: width 0.2s ease;
+}
+
+.ks-nav-link:hover {
+  color: #009b77;
+}
+
+.ks-nav-link:hover::after {
+  width: 100%;
+}
+
+.ks-header-cta {
+  display: none;
+}
+
+.ks-header-cta-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background-color: #009b77;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(0, 155, 119, 0.3);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ks-header-cta-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(0, 155, 119, 0.4);
+}
+
+/* Mobile */
+.ks-nav-mobile-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  padding: 0.4rem;
+}
+
+.ks-nav-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem 0.75rem;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.ks-nav-mobile-link {
+  padding: 0.5rem 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #475569;
+  text-decoration: none;
+}
+
+/* Desktop (md breakpoint ~ 768px) */
+@media (min-width: 768px) {
+  .ks-nav-desktop {
+    display: flex;
+  }
+
+  .ks-header-cta {
+    display: block;
+  }
+
+  .ks-nav-mobile-toggle,
+  .ks-nav-mobile {
+    display: none;
+  }
+}

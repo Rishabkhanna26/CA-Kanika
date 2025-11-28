@@ -1,0 +1,332 @@
+/* app/services/style.css */
+
+.ks-services-root {
+  padding-top: 4rem;
+}
+
+/* hero */
+
+.ks-services-hero {
+  padding: 4.5rem 0;
+  background-color: #f8fafc;
+}
+
+.ks-services-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.ks-services-hero-grid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .ks-services-hero-grid {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+  }
+}
+
+.ks-services-hero-left {
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.ks-services-title {
+  font-size: clamp(2.1rem, 3vw, 3rem);
+  font-weight: 700;
+  color: #002b7f;
+  margin-bottom: 1rem;
+}
+
+.ks-services-title-highlight {
+  color: #009b77;
+}
+
+.ks-services-lead {
+  font-size: 1.02rem;
+  color: #4b5563;
+  margin-bottom: 1.75rem;
+  line-height: 1.7;
+}
+
+.ks-services-hero-cta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .ks-services-hero-cta-row {
+    flex-direction: row;
+  }
+}
+
+.ks-services-primary-btn,
+.ks-services-secondary-btn {
+  padding: 0.9rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ks-services-primary-btn {
+  background-color: #009b77;
+  color: #ffffff;
+  box-shadow: 0 12px 28px rgba(0, 155, 119, 0.4);
+}
+
+.ks-services-primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0, 155, 119, 0.55);
+}
+
+.ks-services-secondary-btn {
+  background-color: transparent;
+  color: #002b7f;
+  border: 2px solid #002b7f;
+}
+
+.ks-services-secondary-btn:hover {
+  background-color: #002b7f;
+  color: #ffffff;
+}
+
+/* hero right */
+
+.ks-services-hero-right {
+  animation: fadeInRight 0.8s ease-out forwards;
+}
+
+.ks-services-hero-card {
+  border-radius: 1.25rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.25);
+  border-top: 4px solid #009b77;
+}
+
+.ks-services-hero-icon-wrap {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background-color: #e8f5f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.ks-services-hero-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: #009b77;
+}
+
+.ks-services-hero-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.ks-services-hero-card-text {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.ks-services-hero-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+  display: grid;
+  gap: 0.3rem;
+}
+
+/* services section */
+
+.ks-services-section {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.ks-services-header {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto 2.5rem;
+}
+
+.ks-services-header-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #002b7f;
+}
+
+.ks-services-header-subtitle {
+  font-size: 0.98rem;
+  color: #6b7280;
+  margin-top: 0.75rem;
+}
+
+.ks-services-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .ks-services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.ks-services-card {
+  border-radius: 1.1rem;
+  padding: 1.75rem 1.5rem;
+  background-color: #f9fafb;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.ks-services-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+}
+
+.ks-services-card-icon-wrap {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.9rem;
+  background-color: #e8f5f1;
+  color: #009b77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.ks-services-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.ks-services-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.ks-services-card-text {
+  font-size: 0.92rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.ks-services-card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+  color: #4b5563;
+  display: grid;
+  gap: 0.25rem;
+}
+
+/* process */
+
+.ks-services-process {
+  padding: 4rem 0 4.5rem;
+  background-color: #f3f4f6;
+}
+
+.ks-services-process-header {
+  text-align: center;
+  max-width: 32rem;
+  margin: 0 auto 2rem;
+}
+
+.ks-services-process-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #002b7f;
+}
+
+.ks-services-process-subtitle {
+  font-size: 0.96rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.ks-services-process-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .ks-services-process-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.ks-services-process-card {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.ks-services-process-step {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 0.75rem;
+  border-radius: 999px;
+  background-color: #e8f5f1;
+  color: #009b77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.ks-services-process-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.ks-services-process-card-text {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* keyframes (if not global) */
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
