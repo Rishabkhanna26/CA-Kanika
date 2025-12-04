@@ -133,7 +133,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
       {/* Professional Journey */}
       <section className="journey-section">
         <div className="container">

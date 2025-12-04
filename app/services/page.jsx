@@ -277,8 +277,6 @@ export default function ServicesPage() {
                     </li>
                   ))}
                 </ul>
-
-
               </div>
             ))}
           </div>

@@ -26,7 +26,6 @@ export async function POST(request) {
         <p><strong>Message:</strong><br/>${message}</p>
       `,
     };
-
     // 3️⃣ Send mail
     await transporter.sendMail(mailOptions);
 

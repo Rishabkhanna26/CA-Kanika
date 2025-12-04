@@ -53,6 +53,7 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

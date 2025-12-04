@@ -162,7 +162,6 @@ export default function HomePage() {
               business requirements.
             </p>
           </div>
-
           <div className="ks-services-grid">
             {services.map((service) => (
               <div key={service.title} className="ks-service-card">
