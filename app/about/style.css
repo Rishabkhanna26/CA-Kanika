@@ -191,20 +191,6 @@ a {
   margin-top: 0.15rem
 }
 
-/* highlight quote */
-.highlight-box {
-  margin-top: 1rem;
-  padding: 0.95rem 1rem;
-  border-radius: 0.8rem;
-  background: linear-gradient(180deg, rgba(0, 43, 127, 0.04), rgba(0, 43, 127, 0.02));
-  border: 1px solid rgba(2, 6, 23, 0.03);
-}
-
-.highlight-text {
-  font-size: 0.95rem;
-  color: #0f172a;
-  margin: 0
-}
 
 /* ---------- PROFESSIONAL JOURNEY (timeline) ---------- */
 .journey-section {

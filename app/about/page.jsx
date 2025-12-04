@@ -127,14 +127,6 @@ export default function AboutPage() {
                       </div>
                     ))}
                   </div>
-
-                  <div className="highlight-box">
-                    <p className="highlight-text">
-                      “Our approach is to combine technical expertise with a
-                      deep understanding of each client's unique financial
-                      journey.”
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
